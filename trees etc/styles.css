@@ -1,0 +1,225 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background color */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+/* Quiz Container */
+#quiz-container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for the quiz container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Headers */
+h1, h2 {
+    color: #2e3b4e; /* Dark blue for the headers */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+button:disabled {
+    background-color: #b0b0b0; /* Light grey when button is disabled */
+    cursor: not-allowed;
+}
+
+/* Quiz Sections */
+#quiz-selection, #quiz-result {
+    margin-bottom: 30px;
+}
+
+/* Dropdown Styling */
+#question-count {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Question Container */
+#question-container {
+    margin-top: 30px;
+}
+
+/* Individual Question Styling */
+#question-container > div {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #e0e0e0; /* Light grey border for questions */
+    border-radius: 8px;
+    background-color: #fafafa; /* Slightly off-white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow around questions */
+}
+
+/* Question Text Styling */
+#question-container p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* Option Styling */
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #4CAF50; /* Green accent for radio buttons */
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #555; /* Dark grey text for options */
+}
+
+/* Quiz Result Section */
+#quiz-result {
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Concept Report Styling */
+#concept-report {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#concept-report div {
+    background-color: #e8f4e5; /* Light green for correct answers */
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#concept-report div.failed {
+    background-color: #f9e5e5; /* Light red for incorrect answers */
+}
+
+/* Result Score Styling */
+#score {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e3b4e; /* Dark blue for result score */
+    margin-bottom: 20px;
+}
+
+/* Additional Styling */
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="radio"]:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Blue focus effect */
+}
+
+/* Page-Specific Color Combinations */
+
+/* Quiz Selection Page */
+#quiz-selection {
+    background-color: #f9fbe7; /* Soft yellow for quiz selection page */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+#quiz-selection button {
+    background-color: #f57c00; /* Orange button for quiz selection */
+}
+
+#quiz-selection button:hover {
+    background-color: #e65100; /* Darker orange on hover */
+}
+
+/* Quiz Questions Page */
+#quiz-questions {
+    background-color: #e1f5fe; /* Light blue background for quiz page */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+#quiz-questions button {
+    background-color: #0288d1; /* Blue button for quiz page */
+}
+
+#quiz-questions button:hover {
+    background-color: #0277bd; /* Darker blue on hover */
+}
+
+/* Quiz Result Page */
+#quiz-result {
+    background-color: #fce4ec; /* Light pink background for result page */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+#quiz-result button {
+    background-color: #ab47bc; /* Purple button for result page */
+}
+
+#quiz-result button:hover {
+    background-color: #8e24aa; /* Darker purple on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #quiz-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    input[type="radio"] {
+        margin-right: 8px;
+    }
+
+    #question-container {
+        margin-top: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}

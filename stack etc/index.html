@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz System - Stack Data Structures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Stack Data Structure Quiz</h1>
+        <div id="quiz-selection">
+            <p>Select the number of questions you want to attempt:</p>
+            <select id="question-count">
+                <option value="10">10 Questions</option>
+                <option value="20">20 Questions</option>
+                <option value="30">30 Questions</option>
+            </select>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="quiz-questions" style="display: none;">
+            <h2>Quiz</h2>
+            <div id="question-container"></div>
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+
+        <div id="quiz-result" style="display: none;">
+            <h2>Quiz Report</h2>
+            <p id="score"></p>
+            <div id="concept-report"></div>
+            <button onclick="resetQuiz()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
